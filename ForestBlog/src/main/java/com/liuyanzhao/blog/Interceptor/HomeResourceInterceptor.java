@@ -36,7 +36,9 @@ public class HomeResourceInterceptor implements WebRequestInterceptor {
      */
     @Override
     public void preHandle(WebRequest request) throws Exception {
-        System.out.println("derrick interupter into");
+         System.out.println(request);
+         String test = "TEST12345";
+        System.out.println(test);
      //导航主要菜单显示
         //分类目录显示
         List<CategoryCustom> categoryList = categoryService.listCategory(1);

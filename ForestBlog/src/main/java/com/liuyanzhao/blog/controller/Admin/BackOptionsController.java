@@ -44,6 +44,8 @@ public class BackOptionsController {
     @RequestMapping(value = "/editSubmit",method = RequestMethod.POST)
     public String editOptionSubmit(Options options) throws Exception {
         //如果记录不存在，那就新建
+        System.out.println("here");
+        System.out.println(options);
         OptionsCustom optionsCustom = optionsService.getOptions();
         if(optionsCustom.getOptionId()==null) {
             optionsService.insertOptions(options);

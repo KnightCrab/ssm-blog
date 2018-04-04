@@ -17,11 +17,7 @@
         <div id="feed_widget">
             <div class="feed-about">
                 <div class="about-main">
-                    <div class="about-img">
-                        <img src="${options.optionAboutsiteAvatar}"
-                        alt="QR Code">
-                    </div>
-                    <div class="about-name">${options.optionAboutsiteTitle}</div>
+                    <div class="about-name">5555${options.optionAboutsiteTitle}</div>
                     <div class="about-the">
                         ${options.optionAboutsiteContent}
                     </div>
