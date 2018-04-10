@@ -85,9 +85,12 @@ $("#weixin_btn").click(function () {
         skin: 'layui-layer-nobg', //没有背景色
         shadeClose: true,
         content: $('#weixin_code'),
-        end:function () {
-            $("#weixin_code").attr("style","display:none;")
-        }
+        // end:function () {
+        //     console.log('coco')
+        //     $("#weixin_code").attr("style","display:none;")
+        // }
+        // type: 1,
+        // content: $("#weixin_code")
     });
 });
 

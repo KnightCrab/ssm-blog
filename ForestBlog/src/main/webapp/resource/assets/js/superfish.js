@@ -15,11 +15,11 @@ animation:{opacity:"show"},animationOut:{opacity:"hide"},speed:"normal",speedOut
 
 $(document).ready(function(){
 	// Main menu superfish
-	$('ul.nav-menu').superfish({
-		delay: 200,
-		animation: {opacity:'show', height:'show'},
-		speed: 'fast'
-	});
+	// $('ul.nav-menu').superfish({
+	// 	delay: 200,
+	// 	animation: {opacity:'show', height:'show'},
+	// 	speed: 'fast'
+	// });
 
 	// Mobile Menu
 	$('#navigation-toggle').sidr({

@@ -2,5 +2,6 @@
 .DS_Store
 
 ForestBlog/target
+ForestBlog/ForestBlog.iml
 .idea/
 out/

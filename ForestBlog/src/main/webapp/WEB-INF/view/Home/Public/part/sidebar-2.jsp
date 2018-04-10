@@ -17,7 +17,7 @@
         <div id="feed_widget">
             <div class="feed-about">
                 <div class="about-main">
-                    <div class="about-name">5555${options.optionAboutsiteTitle}</div>
+                    <div class="about-name">${options.optionAboutsiteTitle}</div>
                     <div class="about-the">
                         ${options.optionAboutsiteContent}
                     </div>
@@ -27,10 +27,13 @@
                     <li class="weixin">
                         <a title="微信" id="weixin_btn" rel="external nofollow">
                             <i class="fa fa-weixin"> </i>
-                            <div id="weixin_code" class="hide" >
-                                <img src="${options.optionAboutsiteWechat}" alt="">
-                            </div>
+
                         </a>
+                        <div id="weixin_code" class="hide" >
+                            <%--<img src="${options.optionAboutsiteWechat}" alt="">--%>
+                            <img src="/img/shang/derrickwx.png" alt="">
+
+                        </div>
                     </li>
                     <li class="tqq">
                         <a target="blank" rel="external nofollow"
@@ -39,19 +42,19 @@
                             <i class="fa fa-qq"></i>
                         </a>
                     </li>
-                    <li class="tsina">
-                        <a title=""
-                           href="http://weibo.com/${options.optionAboutsiteWeibo}"
-                           target="_blank" rel="external nofollow">
-                            <i class="fa fa-weibo"></i>
-                        </a>
-                    </li>
-                    <li class="feed">
-                        <a title="" href="https://github.com/${options.optionAboutsiteGithub}" target="_blank"
-                           rel="external nofollow">
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </li>
+                    <%--<li class="tsina">--%>
+                        <%--<a title=""--%>
+                           <%--href="http://weibo.com/${options.optionAboutsiteWeibo}"--%>
+                           <%--target="_blank" rel="external nofollow">--%>
+                            <%--<i class="fa fa-weibo"></i>--%>
+                        <%--</a>--%>
+                    <%--</li>--%>
+                    <%--<li class="feed">--%>
+                        <%--<a title="" href="https://github.com/${options.optionAboutsiteGithub}" target="_blank"--%>
+                           <%--rel="external nofollow">--%>
+                            <%--<i class="fa fa-github"></i>--%>
+                        <%--</a>--%>
+                    <%--</li>--%>
                 </ul>
                 <div class="about-inf">
                     <span class="about-pn">文章 ${siteBasicStatistics[0]} </span>
