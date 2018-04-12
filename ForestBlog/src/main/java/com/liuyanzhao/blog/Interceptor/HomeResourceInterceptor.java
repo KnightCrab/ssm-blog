@@ -79,6 +79,9 @@ public class HomeResourceInterceptor implements WebRequestInterceptor {
 		Options options = optionsService.getOptions();
 		request.setAttribute("options", options,WebRequest.SCOPE_REQUEST);
 
+
+		//derrick测试增加字段
+
     }
     /**
      * 该方法将在Controller执行之后，返回视图之前执行，ModelMap表示请求Controller处理之后返回的Model对象，所以可以在

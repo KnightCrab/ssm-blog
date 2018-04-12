@@ -7517,3 +7517,11 @@ body {
     /*font-family: Courier New;*/
     /*font-size: 12px;*/
 /*}*/
+/*#weixin_code{*/
+    /*width:516px;*/
+/*}*/
+#weixin_code img{
+    object-fit: contain;
+    width:100%;
+    height:100%;
+}

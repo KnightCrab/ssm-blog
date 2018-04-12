@@ -81,7 +81,7 @@ $("#weixin_btn").click(function () {
         type: 1,
         title: false,
         closeBtn: 0,
-        area: '516px',
+        area: ['516px','516px'],
         skin: 'layui-layer-nobg', //没有背景色
         shadeClose: true,
         content: $('#weixin_code'),

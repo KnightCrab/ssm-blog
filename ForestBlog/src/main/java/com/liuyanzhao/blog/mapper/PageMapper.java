@@ -13,5 +13,7 @@ public interface PageMapper {
 
     int updateByPrimaryKeySelective(Page record);
 
+    int updateByPrimaryKeyWithBLOBs(Page record);
+
     int updateByPrimaryKey(Page record);
 }

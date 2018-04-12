@@ -3,6 +3,8 @@ package com.liuyanzhao.blog.entity;
 public class Options {
     private Integer optionId;
 
+    private Integer optionTest;
+
     private String optionSiteTitle;
 
     private String optionSiteDescrption;
@@ -35,6 +37,14 @@ public class Options {
 
     public void setOptionId(Integer optionId) {
         this.optionId = optionId;
+    }
+
+    public Integer getOptionTest() {
+        return optionTest;
+    }
+
+    public void setOptionTest(Integer optionTest) {
+        this.optionTest = optionTest;
     }
 
     public String getOptionSiteTitle() {

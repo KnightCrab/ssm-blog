@@ -9,8 +9,6 @@ public class Page {
 
     private String pageTitle;
 
-    private String pageContent;
-
     private Date pageCreateTime;
 
     private Date pageUpdateTime;
@@ -20,6 +18,8 @@ public class Page {
     private Integer pageCommentCount;
 
     private Integer pageStatus;
+
+    private String pageContent;
 
     public Integer getPageId() {
         return pageId;
@@ -43,14 +43,6 @@ public class Page {
 
     public void setPageTitle(String pageTitle) {
         this.pageTitle = pageTitle == null ? null : pageTitle.trim();
-    }
-
-    public String getPageContent() {
-        return pageContent;
-    }
-
-    public void setPageContent(String pageContent) {
-        this.pageContent = pageContent == null ? null : pageContent.trim();
     }
 
     public Date getPageCreateTime() {
@@ -91,5 +83,13 @@ public class Page {
 
     public void setPageStatus(Integer pageStatus) {
         this.pageStatus = pageStatus;
+    }
+
+    public String getPageContent() {
+        return pageContent;
+    }
+
+    public void setPageContent(String pageContent) {
+        this.pageContent = pageContent == null ? null : pageContent.trim();
     }
 }
