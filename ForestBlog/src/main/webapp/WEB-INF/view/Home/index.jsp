@@ -203,20 +203,20 @@
 
     <%--友情链接 start--%>
     <rapid:override name="link">
-        <div class="links-box">
-            <div id="links">
-                <c:forEach items="${linkCustomList}" var="l">
-                    <ul class="lx7">
-                        <li class="link-f link-name">
-                            <a href="${l.linkUrl}" target="_blank">
-                                    ${l.linkName}
-                            </a>
-                        </li>
-                    </ul>
-                </c:forEach>
-                <div class="clear"></div>
-            </div>
-        </div>
+        <%--<div class="links-box">--%>
+            <%--<div id="links">--%>
+                <%--<c:forEach items="${linkCustomList}" var="l">--%>
+                    <%--<ul class="lx7">--%>
+                        <%--<li class="link-f link-name">--%>
+                            <%--<a href="${l.linkUrl}" target="_blank">--%>
+                                    <%--${l.linkName}--%>
+                            <%--</a>--%>
+                        <%--</li>--%>
+                    <%--</ul>--%>
+                <%--</c:forEach>--%>
+                <%--<div class="clear"></div>--%>
+            <%--</div>--%>
+        <%--</div>--%>
     </rapid:override>
     <%--友情链接 end--%>
 

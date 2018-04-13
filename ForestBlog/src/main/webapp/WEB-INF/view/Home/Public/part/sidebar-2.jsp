@@ -17,6 +17,9 @@
         <div id="feed_widget">
             <div class="feed-about">
                 <div class="about-main">
+                    <div class="about-img">
+                        <img src="/img/shang/derrickwx.png" alt="QR Code">
+                    </div>
                     <div class="about-name">${options.optionAboutsiteTitle}</div>
                     <div class="about-the">
                         ${options.optionAboutsiteContent}
@@ -29,31 +32,36 @@
                             <i class="fa fa-weixin"> </i>
 
                         </a>
-                        <div id="weixin_code" class="hide" >
+                        <div id="weixin_code" class="hide">
                             <%--<img src="${options.optionAboutsiteWechat}" alt="">--%>
                             <img src="/img/shang/derrickwx.png" alt="">
 
                         </div>
                     </li>
                     <li class="tqq">
+                        <%--<a target="blank" rel="external nofollow"--%>
+                        <%--href="http://wpa.qq.com/msgrd?V=3&amp;uin=${options.optionAboutsiteQq}&amp;Site=QQ&amp;Menu=yes"--%>
+                        <%--title="QQ在线">--%>
+                        <%--<i class="fa fa-qq"></i>--%>
+                        <%--</a>--%>
                         <a target="blank" rel="external nofollow"
-                           href="http://wpa.qq.com/msgrd?V=3&amp;uin=${options.optionAboutsiteQq}&amp;Site=QQ&amp;Menu=yes"
+                           href="http://wpa.qq.com/msgrd?V=3&amp;uin=546846037&amp;Site=QQ&amp;Menu=yes"
                            title="QQ在线">
                             <i class="fa fa-qq"></i>
                         </a>
                     </li>
                     <%--<li class="tsina">--%>
-                        <%--<a title=""--%>
-                           <%--href="http://weibo.com/${options.optionAboutsiteWeibo}"--%>
-                           <%--target="_blank" rel="external nofollow">--%>
-                            <%--<i class="fa fa-weibo"></i>--%>
-                        <%--</a>--%>
+                    <%--<a title=""--%>
+                    <%--href="http://weibo.com/${options.optionAboutsiteWeibo}"--%>
+                    <%--target="_blank" rel="external nofollow">--%>
+                    <%--<i class="fa fa-weibo"></i>--%>
+                    <%--</a>--%>
                     <%--</li>--%>
                     <%--<li class="feed">--%>
-                        <%--<a title="" href="https://github.com/${options.optionAboutsiteGithub}" target="_blank"--%>
-                           <%--rel="external nofollow">--%>
-                            <%--<i class="fa fa-github"></i>--%>
-                        <%--</a>--%>
+                    <%--<a title="" href="https://github.com/${options.optionAboutsiteGithub}" target="_blank"--%>
+                    <%--rel="external nofollow">--%>
+                    <%--<i class="fa fa-github"></i>--%>
+                    <%--</a>--%>
                     <%--</li>--%>
                 </ul>
                 <div class="about-inf">
@@ -81,7 +89,8 @@
                 <li><i class="fa fa-eye"></i> 浏览总量：${siteBasicStatistics[5]} 次</li>
                 <li><i class="fa fa-pencil-square-o"></i> 最后更新：
                     <span style="color:#2F889A">
-                                        <fmt:formatDate value="${lastUpdateArticle.articleUpdateTime}" pattern="yyyy年MM月dd日"/>
+                                        <fmt:formatDate value="${lastUpdateArticle.articleUpdateTime}"
+                                                        pattern="yyyy年MM月dd日"/>
 
                                    </span>
                 </li>
@@ -158,15 +167,17 @@
         <div id="message" class="message-widget">
             <ul>
                 <c:forEach items="${recentCommentList}" var="r">
-                <li style="border: none;">
-                    <a href="/article/${r.articleCustom.articleId}/#anchor-comment-${r.commentCustom.commentId}" title="${r.articleCustom.articleTitle}" rel="external nofollow">
-                        <img alt=""src="${r.commentCustom.commentAuthorAvatar}" class="avatar avatar-64 photo" height="64" width="64">
-                        <span class="comment_author">
+                    <li style="border: none;">
+                        <a href="/article/${r.articleCustom.articleId}/#anchor-comment-${r.commentCustom.commentId}"
+                           title="${r.articleCustom.articleTitle}" rel="external nofollow">
+                            <img alt="" src="${r.commentCustom.commentAuthorAvatar}" class="avatar avatar-64 photo"
+                                 height="64" width="64">
+                            <span class="comment_author">
                             <strong>${r.commentCustom.commentAuthorName}</strong>
                         </span>
-                            ${r.commentCustom.commentContent}
-                    </a>
-                </li>
+                                ${r.commentCustom.commentContent}
+                        </a>
+                    </li>
                 </c:forEach>
             </ul>
         </div>
@@ -175,7 +186,6 @@
     <%--最新评论 end--%>
 
 </div>
-
 
 
 <%--博客主体-右侧侧边栏 end--%>

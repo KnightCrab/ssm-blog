@@ -131,16 +131,18 @@
                 async: false,//同步，待请求完毕后再执行后面的代码
                 type: "POST",
                 url: '/loginVerify',
-                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+//                contentType: "application/x-www-form-urlencoded; charset=utf-8",
                 data: $("#loginForm").serialize(),
-                dataType: "json",
+//                dataType: "json",
                 success: function (data) {
-                    if(data.code==0) {
-                        alert(data.msg);
-                    } else {
-                        window.location.href="/admin";
-
-                    }
+                    console.log(data)
+                    console.log(typeof data)
+//                    if(data.code==0) {
+//                        alert(data.msg);
+//                    } else {
+//                        window.location.href="/admin";
+//
+//                    }
                 },
                 error: function () {
                     alert("数据获取失败")

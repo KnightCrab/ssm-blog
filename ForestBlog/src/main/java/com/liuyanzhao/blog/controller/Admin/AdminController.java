@@ -114,7 +114,9 @@ public class AdminController {
             userService.updateUser(user);
 
         }
+//        response.setContentType("application/json; charset=utf-8");
         String result = new JSONObject(map).toString();
+        System.out.println(result);
         return result;
     }
 
