@@ -312,8 +312,8 @@
                     <form id="comment_form" method="post">
                         <c:if test="${sessionScope.user!=null}">
                             <div class="user_avatar">
-                                <img alt="言曌"
-                                     src="${sessionScope.user.userAvatar}"
+                                <img alt="derrick"
+                                     src="/img/shang/derrickwx.png"
                                      class="avatar avatar-64 photo" height="64" width="64">
                                 登录者：${sessionScope.user.userNickname}
                                 <br> <a href="javascript:void(0)" onclick="logout()">登出</a>
